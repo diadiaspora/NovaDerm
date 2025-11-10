@@ -26,12 +26,15 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
           alt={title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
-        <div className="absolute top-4 left-4 bg-[#2C5F4F] text-white px-3 py-1 text-xs font-medium rounded-full">
+        <div className="absolute top-4 left-4 bg-[#2C5F4F] text-white px-3 py-1 text-xs font-medium rounded-[5px]">
           {category}
         </div>
       </div>
       <div className="p-6">
-        <h3 className="font-serif text-xl text-[#2C5F4F] mb-2 group-hover:text-[#D4AF37] transition-colors">
+        <h3
+          style={{ fontFamily: "NorthCarossela, serif" }}
+          className=" text-xl text-[#2C5F4F] mb-2 group-hover:text-[#D4AF37] transition-colors"
+        >
           {title}
         </h3>
         <p className="text-gray-600 text-sm leading-relaxed mb-4">
